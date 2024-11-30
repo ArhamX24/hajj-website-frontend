@@ -4,10 +4,8 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <>
-    <div className='h-hero-h w-full'>
-    <div className='h-full bg-hero-desktop w-full bg-cover opacity-80 z-0'>
+    <div className='h-hero-h bg-hero-desktop w-full bg-cover bg-center bg-no-repeat opacity-80 z-0'>
       
-    </div>
     </div>
     </>
   )
