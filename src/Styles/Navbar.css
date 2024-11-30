@@ -1,0 +1,68 @@
+.logo-txt{
+    color: #347928;
+}
+
+
+.link{
+    position: relative;
+    padding: 20px 10px ;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.link::after{
+    content: "";
+    position: absolute;
+    background-color: #347928;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover::after{
+    width: 100%;
+}
+
+.dropdown-menu{
+    display: none;
+    transition: all 0.4s ease-out;
+}
+
+.link:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-menu ul{
+    display: block;
+    margin: 5px;
+}
+
+.dropdown-link{
+    width: 100px;
+    padding: 5px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.dropdown-link::after{
+    content: "";
+    position: absolute;
+    background-color: #347928;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-link:hover::after{
+    width: 100%;
+}
