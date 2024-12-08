@@ -13,15 +13,23 @@ export default {
       },
       backgroundColor:{
         'primary': '#347928',
+        "form-btn": "#FFA500"
       },
       borderColor:{
         'primary': '#347928',
       },
       height: {
         "hero-h": "60vh"
+      },
+      width: {
+        "30%" : "30%"
+      },
+      textColor: {
+        "form-title": "#FFA500"
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }){ addBase({ 'input[type="number"]::-webkit-outer-spin-button': { '-webkit-appearance': 'none', margin: '0', }, 'input[type="number"]::-webkit-inner-spin-button': { '-webkit-appearance': 'none', margin: '0', }, 'input[type="number"]': { '-moz-appearance': 'textfield', }, }); }],
 }
 
